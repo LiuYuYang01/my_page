@@ -12,7 +12,7 @@ export default () => {
         <AnimatedContent direction="vertical" ease="power3.out">
           <div className="flex items-center justify-between w-6xl">
             <div className="w-[50%]">
-              <div className="text-6xl font-semibold mb-6">👋 Hello, 我叫 XXX</div>
+              <div className="text-6xl font-semibold mb-6">👋 Hello, 我叫刘宇阳</div>
 
               <div className="flex items-center space-x-3 mb-6">
                 <SplitText text="我是一名 02 年的" className="text-2xl" />
@@ -26,6 +26,16 @@ export default () => {
               <div className="text-xl text-gray-400">
                 从小我就对计算机有着无穷的兴趣，因此我的梦想是做一名技术顶尖的程序员，也就是
                 <b className="text-[#539dfd]"> 架构师</b>
+              </div>
+
+              <div className="flex space-x-4 mt-8">
+                <a href="https://liuyuyang.net" target="_blank" className="px-6 py-2 bg-[#539dfd] text-white rounded-full hover:bg-[#3a86f5] transition-colors cursor-pointer">
+                  个人博客
+                </a>
+
+                <a href="https://github.com/LiuYuYang01" target="_blank" className="px-6 py-2 border border-gray-800 hover:border-cyan-500/50 rounded-full hover:text-white transition-colors cursor-pointer">
+                  GitHub
+                </a>
               </div>
             </div>
 
