@@ -1,0 +1,8 @@
+{
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "printWidth": 120,
+  "semi": true,
+  "bracketSpacing": true,
+  "arrowParens": "always"
+}
