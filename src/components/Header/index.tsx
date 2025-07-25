@@ -29,11 +29,19 @@ export default () => {
               </div>
 
               <div className="flex space-x-4 mt-8">
-                <a href="https://liuyuyang.net" target="_blank" className="px-6 py-2 bg-[#539dfd] text-white rounded-full hover:bg-[#3a86f5] transition-colors cursor-pointer">
+                <a
+                  href="https://liuyuyang.net"
+                  target="_blank"
+                  className="px-6 py-2 bg-[#539dfd] text-white rounded-full hover:bg-[#3a86f5] transition-colors cursor-pointer"
+                >
                   个人博客
                 </a>
 
-                <a href="https://github.com/LiuYuYang01" target="_blank" className="px-6 py-2 border border-gray-800 hover:border-cyan-500/50 rounded-full hover:text-white transition-colors cursor-pointer">
+                <a
+                  href="https://github.com/LiuYuYang01"
+                  target="_blank"
+                  className="px-6 py-2 border border-gray-800 hover:border-cyan-500/50 rounded-full hover:text-white transition-colors cursor-pointer"
+                >
                   GitHub
                 </a>
               </div>
@@ -49,6 +57,10 @@ export default () => {
           </div>
         </AnimatedContent>
       </div>
+
+      <AnimatedContent direction="vertical" ease="power3.out">
+        <div className="absolute bottom-0 text-center text-xs text-gray-400">了解更多</div>
+      </AnimatedContent>
     </div>
   );
 };
