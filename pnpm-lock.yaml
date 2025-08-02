@@ -32,12 +32,21 @@ importers:
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
+      react-icon-cloud:
+        specifier: ^4.1.7
+        version: 4.1.7(react@19.1.0)
+      react-icons:
+        specifier: ^5.5.0
+        version: 5.5.0(react@19.1.0)
       react-masonry-css:
         specifier: ^1.0.16
         version: 1.0.16(react@19.1.0)
       sass:
         specifier: ^1.89.2
         version: 1.89.2
+      simple-icons:
+        specifier: ^15.7.0
+        version: 15.7.0
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.11
@@ -164,6 +173,10 @@ packages:
   '@babel/types@7.28.1':
     resolution: {integrity: sha512-x0LvFTekgSX+83TI28Y9wYPUfzrnl2aT5+5QLnO6v7mSJYtEEevuDRN0F0uSHRk1G1IWZC43o00Y0xDDrpBGPQ==}
     engines: {node: '>=6.9.0'}
+
+  '@csstools/convert-colors@2.0.0':
+    resolution: {integrity: sha512-P7BVvddsP2Wl5v3drJ3ArzpdfXMqoZ/oHOV/yFiGFb3JQr9Z9UXZ9tnHAKJsO89lfprR1F9ExW3Yij21EjEBIA==}
+    engines: {node: '>=6.0.0'}
 
   '@esbuild/aix-ppc64@0.25.8':
     resolution: {integrity: sha512-urAvrUedIqEiFR3FYSLTWQgLu5tb+m0qZw0NBEasUeo6wuqatkMDaRT+1uABiGXEu5vqgPd7FGE1BhsAIy9QVA==}
@@ -1418,6 +1431,16 @@ packages:
     peerDependencies:
       react: ^19.1.0
 
+  react-icon-cloud@4.1.7:
+    resolution: {integrity: sha512-E5k93BlO7dNLmFZPd0JlJ1dO6pUI86IarVEXo3bkQg6oFqqwKv3XFkEKRl2iaxB9K2uOvOvoCJu2kjkoQWI6Mg==}
+    peerDependencies:
+      react: '>=16'
+
+  react-icons@5.5.0:
+    resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
+    peerDependencies:
+      react: '*'
+
   react-masonry-css@1.0.16:
     resolution: {integrity: sha512-KSW0hR2VQmltt/qAa3eXOctQDyOu7+ZBevtKgpNDSzT7k5LA/0XntNa9z9HKCdz3QlxmJHglTZ18e4sX4V8zZQ==}
     peerDependencies:
@@ -1475,6 +1498,10 @@ packages:
   shebang-regex@3.0.0:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
+
+  simple-icons@15.7.0:
+    resolution: {integrity: sha512-buN9moq1lh6Tujgr2Nc3Vgi4naE0IOKon48G42aLWqSNxjWJlUx+YSqobKcefom4uv1xyAVFcjQOJIhBJvXjGw==}
+    engines: {node: '>=0.12.18'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -1722,6 +1749,8 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
+
+  '@csstools/convert-colors@2.0.0': {}
 
   '@esbuild/aix-ppc64@0.25.8':
     optional: true
@@ -2795,6 +2824,15 @@ snapshots:
       react: 19.1.0
       scheduler: 0.26.0
 
+  react-icon-cloud@4.1.7(react@19.1.0):
+    dependencies:
+      '@csstools/convert-colors': 2.0.0
+      react: 19.1.0
+
+  react-icons@5.5.0(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+
   react-masonry-css@1.0.16(react@19.1.0):
     dependencies:
       react: 19.1.0
@@ -2858,6 +2896,8 @@ snapshots:
       shebang-regex: 3.0.0
 
   shebang-regex@3.0.0: {}
+
+  simple-icons@15.7.0: {}
 
   source-map-js@1.2.1: {}
 
