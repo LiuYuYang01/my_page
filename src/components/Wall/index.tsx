@@ -30,7 +30,7 @@ export default () => {
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto mb-14">
         <div data-aos="fade-up" data-aos-duration="2000">
-          <p className="text-white text-4xl leading-14 text-center">这里是诸多网友对我的评价</p>
+          <p className="text-white text-4xl leading-14 text-center">来自诸多网友对我的评价</p>
         </div>
       </div>
 

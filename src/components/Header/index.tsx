@@ -1,7 +1,6 @@
 import LightRays from '@/bits/LightRays';
 import SplitText from '@/bits/SplitText';
 import RotatingText from '@/bits/RotatingText';
-import AnimatedContent from '@/bits/AnimatedContent';
 import { CgChevronDoubleDown } from 'react-icons/cg';
 
 export default () => {
@@ -10,7 +9,7 @@ export default () => {
       <LightRays raysOrigin="top-center" raysColor="#fff" lightSpread={2} />
 
       <div className="absolute top-[30%] left-[20%] z-50">
-        <AnimatedContent direction="vertical" ease="power3.out" duration={1.5}>
+        <div data-aos="fade-up" data-aos-duration="1500">
           <div className="flex items-center justify-between w-6xl">
             <div className="w-[50%]">
               <div className="text-6xl font-semibold mb-6">👋 Hello, 我叫刘宇阳</div>
@@ -56,7 +55,7 @@ export default () => {
               />
             </div>
           </div>
-        </AnimatedContent>
+        </div>
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center text-white cursor-pointer animate-bounce">

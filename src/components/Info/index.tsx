@@ -1,7 +1,4 @@
-import { useEffect } from 'react';
 import IconCloud from '@/ui/IconCloud';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const techIcons = [
   'scss',
@@ -68,13 +65,6 @@ const techIcons = [
 ];
 
 export default () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      once: false, // 使动画重复播放
-    });
-  }, []);
-
   return (
     <div className="max-w-5xl mx-auto mb-36 mt-[100px] text-center">
       <div>
