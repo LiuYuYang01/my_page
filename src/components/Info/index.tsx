@@ -70,14 +70,14 @@ export default () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
-    <div className="max-w-5xl mx-auto mb-36 mt-[100px]">
+    <div className="max-w-5xl mx-auto mb-36 mt-[100px] text-center">
       <div>
         <AnimatedContent direction="vertical" ease="power3.out" duration={3}>
           <p className="text-white text-4xl leading-14">
             我从小就对 <b className="text-primary">网站开发</b> 领域很感兴趣，当时就希望有一个属于自己的网站，
             <b className="text-yellow-300"> 17 </b>
             年时候成功进入站长圈，并通过各种 <b className="text-green-400">自学</b>
-            ，以及各种折腾，才有了你现在看到的这个网站
+            ，以及各种折腾，才有了你现在所看到的这个网站
           </p>
 
           {/* <TextType
@@ -127,16 +127,17 @@ export default () => {
 
         <AnimatedContent direction="vertical" ease="power3.out" duration={3}>
           <p className="text-white text-4xl leading-14 mt-6">
-            因此，我踏入了 <b className="text-primary">全栈工程师</b> 的学习道路
+            因此，我踏入了 <b className="text-primary">全栈工程师</b> 的探索之路
           </p>
         </AnimatedContent>
 
         <AnimatedContent direction="vertical" ease="power3.out" duration={3}>
           <div className="flex justify-center">
             <img
-              src="https://bu.dusays.com/2025/08/03/688e4b8493c3f.jpg"
+              // src="https://res.liuyuyang.net/thrive/article/688f1d8d60b24174ce20ff03.jpg"
+              src="https://bu.dusays.com/2025/08/03/688f1dd3d2cdc.jpg"
               alt=""
-              className={`h-[500px] mt-10 rounded-4xl transition-all duration-500 ${
+              className={`w-full min-h-[500px] mt-10 rounded-4xl transition-all duration-500 ${
                 imageLoaded ? 'opacity-100 blur-0' : 'opacity-80 blur-md'
               }`}
               onLoad={() => setImageLoaded(true)}

@@ -28,7 +28,7 @@ export default () => {
   };
 
   return (
-    <div className="min-h-screen bg-black py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto mb-14">
         <AnimatedContent direction="vertical" ease="power3.out" duration={3}>
           <p className="text-white text-4xl leading-14 text-center">这里是诸多网友对我的评价</p>
