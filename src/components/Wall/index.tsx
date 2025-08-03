@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import axios from '@/utils/request';
-import AnimatedContent from '@/bits/AnimatedContent';
 import Masonry from 'react-masonry-css';
 
 export default () => {
@@ -30,16 +29,16 @@ export default () => {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto mb-14">
-        <AnimatedContent direction="vertical" ease="power3.out" duration={3}>
+        <div data-aos="fade-up" data-aos-duration="2000">
           <p className="text-white text-4xl leading-14 text-center">这里是诸多网友对我的评价</p>
-        </AnimatedContent>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto">
         {/* 使用 react-masonry-css 实现瀑布流布局 */}
         <Masonry breakpointCols={breakpointColumnsObj} className="masonry-grid" columnClassName="masonry-grid_column">
           {list.map((item, index) => (
-            <AnimatedContent key={item.id} distance={50} direction="vertical" initialOpacity={0} delay={index * 0.1}>
+            <div key={item.id} data-aos="fade-up" data-aos-duration="1000" data-aos-delay={index * 100}>
               <div className="bg-gray-900/50 border border-gray-800 rounded-xl overflow-hidden shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300 hover:border-cyan-500/50 group h-full flex flex-col mb-3">
                 <div className="p-6 flex-grow">
                   <div className="flex items-center mb-2">
@@ -54,7 +53,7 @@ export default () => {
                   </div>
                 </div>
               </div>
-            </AnimatedContent>
+            </div>
           ))}
         </Masonry>
       </div>
