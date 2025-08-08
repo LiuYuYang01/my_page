@@ -8,7 +8,7 @@ export default () => {
   const getWallList = async () => {
     const {
       data: { data },
-    } = await axios.post('/wall/cate/2?page=1&size=9999');
+    } = await axios.post('/wall/cate/7?page=1&size=9999');
     setList(data.result);
   };
 

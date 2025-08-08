@@ -5,6 +5,7 @@ import Info from './components/Info';
 import Particles from './bits/Particles';
 // import DotGrid from './bits/DotGrid';
 // import Galaxy from './bits/Galaxy';
+import Work from './components/Work';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -40,6 +41,8 @@ export default () => {
         {/* <DotGrid /> */}
         {/* <Galaxy /> */}
       </div>
+
+      <Work />
 
       <Info />
       <Wall />

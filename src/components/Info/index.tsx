@@ -66,8 +66,8 @@ const techIcons = [
 
 export default () => {
   return (
-    <div className="max-w-5xl mx-auto mb-36 mt-[100px] text-center">
-      <div>
+    <div className="mb-36 mt-[100px] text-center">
+      <div className="max-w-5xl mx-auto">
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14">
             我从小就对 <b className="text-primary">网站开发</b> 领域很感兴趣，当时就希望有一个属于自己的网站， 在{' '}
@@ -93,7 +93,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="mt-[400px]">
+      <div className="max-w-5xl mx-auto mt-[400px] space-y-[50px]">
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14">
             所谓 <b className="text-yellow-300">"不谋全局者，不足谋一域"</b>
@@ -136,7 +136,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="mt-[400px]">
+      <div className="max-w-5xl mx-auto mt-[400px] space-y-[50px]">
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14 mt-6">在这条路我并没有选择传统的教育方式</p>
         </div>
@@ -183,7 +183,7 @@ export default () => {
         </div>
       </div>
 
-      <div className="mt-[400px]">
+      <div className="max-w-5xl mx-auto mt-[400px] space-y-[50px]">
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14 mb-32">
             对了，我还有一个 <b className="text-yellow-300">身份</b>
@@ -223,19 +223,23 @@ export default () => {
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14 mt-6">同时保持简单易用</p>
         </div>
+      </div>
 
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <div className="flex justify-center">
-            <img
-              src="https://bu.dusays.com/2025/08/03/688f2ce32fcd8.jpg"
-              alt=""
-              className={`min-h-[594px] mt-10 rounded-4xl transition-all duration-500`}
-            />
-          </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="bg-white w-full h-screen flex items-center mt-[100px]"
+      >
+        <div className="flex justify-center max-w-6xl mx-auto">
+          <img
+            src="https://bu.dusays.com/2025/08/08/68960f1fd32c9.jpg"
+            alt=""
+            className={`transition-all duration-500`}
+          />
         </div>
       </div>
 
-      <div className="mt-[400px]">
+      <div className="max-w-5xl mx-auto mt-[400px] space-y-[50px]">
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14">
             下面是我的 <b className="text-yellow-300">毕生所学</b>
@@ -244,7 +248,7 @@ export default () => {
 
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14 mt-6 mb-[100px]">
-            其中我最喜欢的一套组合是：<b className="text-[#8DD5F8]">NextJS</b> <span className="px-1">+</span> 
+            其中我最喜欢的一套组合是：<b className="text-[#8DD5F8]">NextJS</b> <span className="px-1">+</span>
             <b className="text-primary">TailwindCSS</b>
           </p>
         </div>
