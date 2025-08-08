@@ -90,7 +90,7 @@ export default () => {
         <div data-aos="fade-up" data-aos-duration="1000" className="mt-10">
           <Work />
 
-          <div className="ml-[-200px]">
+          <div className="ml-[-350px]">
             <Work
               images={[
                 { src: 'https://bu.dusays.com/2025/08/09/689623fc681f2.jpg', alt: 'Image 1' },
