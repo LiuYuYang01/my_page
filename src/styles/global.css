@@ -28,3 +28,13 @@ body {
     padding-left: 8px;
   }
 }
+
+/* 隐藏滚动条样式 */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE 和 Edge */
+  scrollbar-width: none;  /* Firefox */
+}

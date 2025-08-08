@@ -9,7 +9,6 @@ export default () => {
     const {
       data: { data },
     } = await axios.post('/wall/cate/2?page=1&size=9999');
-    console.log(data.result);
     setList(data.result);
   };
 
@@ -47,7 +46,7 @@ export default () => {
 
                   <div className="relative flex-grow flex flex-col text-sm">
                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <p className="text-gray-300 relative z-10 flex-grow max-h-[300px] overflow-y-scroll">
+                    <p className="text-gray-300 relative z-10 flex-grow max-h-[300px] overflow-y-scroll scrollbar-hide">
                       {item.content}
                     </p>
                   </div>

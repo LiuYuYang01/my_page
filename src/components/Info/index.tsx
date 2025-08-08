@@ -70,9 +70,9 @@ export default () => {
       <div>
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14">
-            我从小就对 <b className="text-primary">网站开发</b> 领域很感兴趣，当时就希望有一个属于自己的网站，
+            我从小就对 <b className="text-primary">网站开发</b> 领域很感兴趣，当时就希望有一个属于自己的网站， 在{' '}
             <b className="text-yellow-300"> 17 </b>
-            年时候成功进入站长圈，并通过各种 <b className="text-green-400">自学</b>
+            年成功进入站长圈，并通过各种 <b className="text-green-400">自学</b>
             ，以及各种折腾，才有了你现在所看到的这个网站
           </p>
 
@@ -102,7 +102,7 @@ export default () => {
 
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14 mt-6">
-            我觉得只专注一个领域是无法做出一个 <b className="text-green-400">完整的项目</b>
+            我认为只专注一个领域是无法做出一个 <b className="text-green-400">完整的项目</b>
           </p>
         </div>
 
@@ -115,7 +115,7 @@ export default () => {
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1000">
-          <p className="text-white text-4xl leading-14 mt-6">我想一个人能够完成整个项目的研发的能力</p>
+          <p className="text-white text-4xl leading-14 mt-6">我想具备的是能够一个人完成整个项目的研发的能力</p>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1000">
@@ -217,15 +217,11 @@ export default () => {
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1000">
-          <p className="text-white text-4xl leading-14 mt-6">
-            我希望它能够成为一个真正有用且独特的产物
-          </p>
+          <p className="text-white text-4xl leading-14 mt-6">我希望它能够成为一个真正有用且独特的产物</p>
         </div>
 
-         <div data-aos="fade-up" data-aos-duration="1000">
-          <p className="text-white text-4xl leading-14 mt-6">
-            同时保持简单易用
-          </p>
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <p className="text-white text-4xl leading-14 mt-6">同时保持简单易用</p>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1000">
@@ -248,7 +244,7 @@ export default () => {
 
         <div data-aos="fade-up" data-aos-duration="1000">
           <p className="text-white text-4xl leading-14 mt-6 mb-[100px]">
-            其中我最喜欢的一套组合是：<b className="text-[#8DD5F8]">NextJS</b> +{' '}
+            其中我最喜欢的一套组合是：<b className="text-[#8DD5F8]">NextJS</b> <span className="px-1">+</span> 
             <b className="text-primary">TailwindCSS</b>
           </p>
         </div>
