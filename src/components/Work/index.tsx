@@ -12,14 +12,20 @@ interface HorizontalGalleryProps {
 
 export default function HorizontalGallery({
   images = [
-    { src: 'https://picsum.photos/id/1/600/600', alt: 'Image 1' },
-    { src: 'https://picsum.photos/id/10/600/600', alt: 'Image 10' },
-    { src: 'https://picsum.photos/id/100/600/600', alt: 'Image 100' },
-    { src: 'https://picsum.photos/id/1000/600/600', alt: 'Image 1000' },
-    { src: 'https://picsum.photos/id/1001/600/600', alt: 'Image 1001' },
-    { src: 'https://picsum.photos/id/1002/600/600', alt: 'Image 1002' },
-    { src: 'https://picsum.photos/id/1003/600/600', alt: 'Image 1003' },
-    { src: 'https://picsum.photos/id/1004/600/600', alt: 'Image 1004' },
+    { src: 'https://bu.dusays.com/2025/08/09/689624f3698af.jpg', alt: 'Image 14' },
+    { src: 'https://bu.dusays.com/2025/08/09/6896247e7aaf6.jpg', alt: 'Image 13' },
+    { src: 'https://bu.dusays.com/2025/08/09/689623fe118af.jpg', alt: 'Image 2' },
+    { src: 'https://bu.dusays.com/2025/08/09/6896246086c01.jpg', alt: 'Image 6' },
+    { src: 'https://bu.dusays.com/2025/08/09/689624cac990f.jpg', alt: 'Image 11' },
+    { src: 'https://bu.dusays.com/2025/08/09/6896247f92f1f.jpg', alt: 'Image 10' },
+    { src: 'https://bu.dusays.com/2025/08/09/689624d0475a5.jpg', alt: 'Image 12' },
+    { src: 'https://bu.dusays.com/2025/08/09/6896240e1153a.jpg', alt: 'Image 9' },
+    { src: 'https://bu.dusays.com/2025/08/09/689624670f0f7.jpg', alt: 'Image 8' },
+    { src: 'https://bu.dusays.com/2025/08/09/6896246546c88.jpg', alt: 'Image 7' },
+    { src: 'https://bu.dusays.com/2025/08/09/689624592b4bf.jpg', alt: 'Image 5' },
+    { src: 'https://bu.dusays.com/2025/08/09/6896245875d65.jpg', alt: 'Image 4' },
+    { src: 'https://bu.dusays.com/2025/08/09/68962457e423c.jpg', alt: 'Image 3' },
+    { src: 'https://bu.dusays.com/2025/08/09/689623fc681f2.jpg', alt: 'Image 1' },
   ],
   scrollSpeed = 2,
 }: HorizontalGalleryProps) {
@@ -69,27 +75,28 @@ export default function HorizontalGallery({
   }, [isPaused, scrollSpeed, images.length]);
 
   return (
-    <div
-      ref={galleryRef}
-      className="relative overflow-hidden py-8"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
-      <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-transparent to-black/20 pointer-events-none z-10"></div>
-      <div ref={stripRef} className="flex gap-6 whitespace-nowrap" style={{ willChange: 'transform' }}>
-        {galleryImages.map((image, index) => (
-          <div
-            key={index}
-            className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-lg overflow-hidden shadow-xl flex-shrink-0"
-          >
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-            />
-          </div>
-        ))}
+    <>
+      <div
+        ref={galleryRef}
+        className="relative overflow-hidden py-8"
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+      >
+        <div ref={stripRef} className="flex gap-6 whitespace-nowrap" style={{ willChange: 'transform' }}>
+          {galleryImages.map((image, index) => (
+            <div
+              key={index}
+              className="w-[650px] rounded-lg overflow-hidden shadow-xl flex-shrink-0"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
