@@ -12,10 +12,10 @@ export default () => {
         <div data-aos="fade-up" data-aos-duration="1500">
           <div className="flex items-center justify-between w-6xl">
             <div className="w-[50%]">
-              <div className="text-6xl font-semibold mb-6">👋 Hello, 我叫刘宇阳</div>
+              <div className="text-[50px] font-semibold mb-6">👋 Hello, 我叫刘宇阳</div>
 
               <div className="flex items-center space-x-3 mb-6">
-                <SplitText text="我是一名 02 年的" className="text-2xl" />
+                <p className="text-2xl">我是一名 02 年的</p>
 
                 <RotatingText
                   texts={['前端工程师', '后端工程师', '全栈工程师']}
@@ -24,8 +24,7 @@ export default () => {
               </div>
 
               <div className="text-xl text-gray-400">
-                有些梦虽然遥不可及，但并不是不可能实现。因此我的梦想是做一名技术顶尖的程序员，也就是众所周知的
-                <b className="text-[#539dfd]"> 架构师</b>
+                <SplitText text="我的梦想是做一名技术顶尖的架构师，奈何学历太低" />
               </div>
 
               <div className="flex space-x-4 mt-8">
@@ -51,7 +50,7 @@ export default () => {
               <img
                 src="https://q.qlogo.cn/g?b=qq&nk=3311118881&s=640"
                 alt=""
-                className="w-[300px] h-[300px] rounded-full"
+                className="w-[300px] h-[300px] rounded-full mr-12 avatar-animation shadow-[5px_11px_30px_20px_rgba(255,255,255,0.1)]"
               />
             </div>
           </div>

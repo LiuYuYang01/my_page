@@ -4,8 +4,17 @@
   --color-primary: #3a86f5;
 }
 
+/* 添加字体定义 */
+@font-face {
+  font-family: "LXGW WenKai";
+  src: url("../assets/font/LXGWWenKai-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background-color: #0D1017;
+  background-color: #0d1017;
+  font-family: "LXGW WenKai", sans-serif;
 }
 
 .masonry-grid {
@@ -35,6 +44,33 @@ body {
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE 和 Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE 和 Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* 头像动画效果 */
+.avatar-animation {
+  animation: 5s linear infinite miniShape;
+}
+
+@keyframes miniShape {
+  0%,
+  100% {
+    border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+
+  34% {
+    border-radius: 70% 30% 46% 54%/30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+  }
+
+  50% {
+    transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+  }
+
+  67% {
+    border-radius: 100% 60% 60% 100%/100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+  }
 }
